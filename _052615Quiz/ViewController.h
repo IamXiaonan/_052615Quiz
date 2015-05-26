@@ -7,8 +7,26 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Quiz.h"
 
 @interface ViewController : UIViewController
+
+
+@property (nonatomic) Quiz *quiz;
+@property (nonatomic) Question *question;
+
+@property (weak, nonatomic) IBOutlet UIProgressView *processBar;
+@property (weak, nonatomic) IBOutlet UILabel *questionDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UIButton *optionOneButton;
+@property (weak, nonatomic) IBOutlet UIButton *optionTwoButton;
+@property (weak, nonatomic) IBOutlet UIButton *optionThreeButton;
+@property (weak, nonatomic) IBOutlet UIButton *optionFourButton;
+
+- (IBAction)optionOneSelected:(id)sender;
+- (IBAction)optionTwoSelected:(id)sender;
+- (IBAction)optionThreeSelected:(id)sender;
+- (IBAction)optionFourSelected:(id)sender;
+
 
 
 @end
